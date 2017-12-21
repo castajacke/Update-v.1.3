@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Notes App</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Josefin+Slab">
+        <link rel="stylesheet" type="text/css" href="framework7.material.min.css">
+        <link rel="stylesheet" type="text/css" href="framework7.material.colors.min.css">
+        <link rel="stylesheet" type="text/css" href="css/my-app.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta charset='UFT-8' name='viewport' content='width=device-width, initial=scale=1.0' >
+    <link rel='stylesheet' type='text/css' href='clock.css'>
+
+    </head>
+<body align="center">
+<div id='main-container'>
+      <h1 id='clock'></h1>
+    </div>
+    <div id='alarm-container'>
+      <h3>Set Alarm Time</h3>
+        <label>
+          <div>
+          <select id='alarmhrs' ></select>
+          </div>
+        </label>
+        <label>
+          <div>
+          <select id='alarmmins' ></select>
+          </div>
+        </label>
+        <label>
+          <div>
+          <select id='alarmsecs' ></select>
+          </div>
+        </label>
+        <label>
+          <div>
+            <select id="ampm">
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </div>
+        </label>
+        </div>
+    </div>
+
+    <div id='buttonHolder'>
+      <div>
+        <button  id='setButton' onClick='alarmSet()'>Set Alarm</button>
+      <br>
+      </div>
+      <div>
+        <button  id='clearButton' onClick='alarmClear()'>Clear Alarm</button>
+      </div>
+    </div>
+
+
+
+    </div>
+  <div id="content"></div>
+  <script type="text/javascript" src="js/react.min.js"></script>
+<script type="text/javascript" src="js/react-dom.min.js"></script>
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<script src='https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='clock.js'></script>
+  </body>
+</html>
+  
+    <script  src="js/alarm.js"></script>
+
+
+    <script type="text/javascript" src="js/sql.js"></script>
+   
+    <script type="text/javascript" src="js/sqlite.js"></script>
+  </body>
+</html>
